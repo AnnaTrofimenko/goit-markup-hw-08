@@ -1,0 +1,8 @@
+.button {
+  @include font(16px, 1.88, 00.06em);
+  border-radius: 4px;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}

@@ -1,0 +1,56 @@
+.team {
+  background-color: var(--background-icon-button);
+  padding: 60px 0;
+  align-content: center;
+}
+@media screen and (min-width: 1200px) {
+  padding: 94px 0;
+}
+.section-title {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  margin-bottom: 50px;
+}
+.staff {
+  align-content: center;
+}
+@media screen and (min-width: 768px) {
+  .staff {
+    display: flex;
+    // flex-wrap: wrap;
+    justify-content: center;
+    margin-right: calc(-1 * var(--indent));
+    margin-bottom: calc(-1 * var(--indent));
+  }
+}
+.staff__list {
+  flex-basis: calc(100% / 4 - var(--indent));
+  margin-right: var(--indent);
+  margin-bottom: var(--indent);
+  background: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.staff__name {
+  @include font(16px, 1.19, 0.03em, 500);
+  text-align: center;
+  margin-bottom: 10px;
+}
+.staff__profession {
+  @include font(16px, 1.19, 0.03em, 400);
+  text-align: center;
+  color: var(--secondary-color);
+  margin-bottom: 16px;
+}
+.name-box {
+  justify-content: center;
+  padding: 30px 74px 24px;
+}
+@media screen and (min-width: 1200px) {
+  .name-box {
+    padding: 30px 32px;
+  }
+}
